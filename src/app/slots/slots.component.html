@@ -1,0 +1,24 @@
+<p>slots works!</p>
+<div class="grid-table">
+    <div class ="thead">
+        <div class="tr">
+            <div class ="td">SLOT NO</div>
+            <div class ="td">START TIME</div>
+            <div class ="td">END TIME </div>
+        </div>
+    </div>
+    <div class ="tbody">
+        <form class ="tr" [formGroup]="fg" *ngFor="let fg of slotForms.controls">
+            <div class ="td">
+                <input class="form-control" formControlName="SlotNo">
+            </div>
+                <div class ="td">
+                    <input class="form-control" formControlName="start_time">
+                </div>
+                <div class ="td">
+                        <input class="form-control" formControlName="end_time">
+                    </div>
+        </form>
+          
+    </div>
+</div>
